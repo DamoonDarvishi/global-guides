@@ -39,6 +39,7 @@ function Map() {
     },
     [geoLocationPosition]
   );
+
   return (
     <div className={styles.mapContainer}>
       {!geoLocationPosition && (
