@@ -1,17 +1,18 @@
+import { Suspense, lazy } from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import Product from "./pages/Product";
-import Pricing from "./pages/pricing";
-import HomePage from "./pages/homepage";
-import NotFound from "./pages/NotFound";
-import AppLayout from "./pages/AppLayout";
-import Login from "./pages/Login";
 import CityList from "./components/CityList";
 import CountryList from "./components/CountryList";
 import City from "./components/City";
 import Form from "./components/Form";
 import { CitiesProvider } from "./contexts/CitiesContext";
-import { Suspense } from "react";
 import SpinnerFullPage from "./components/SpinnerFullPage";
+
+const Homepage = lazy(() => import("./pages/Homepage"));
+const Product = lazy(() => import("./pages/Product"));
+const Pricing = lazy(() => import("./pages/Pricing"));
+const Login = lazy(() => import("./pages/Login"));
+const AppLayout = lazy(() => import("./pages/AppLayout"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       <BrowserRouter>
         <Suspense fallback={<SpinnerFullPage />}>
           <Routes>
-            <Route index element={<HomePage />} />
+            <Route index element={<Homepage />} />
             <Route path="login" element={<Login />} />
             <Route path="product" element={<Product />} />
             <Route path="pricing" element={<Pricing />} />
