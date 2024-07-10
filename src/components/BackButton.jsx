@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 
-function ButtonBack() {
+function BackButton() {
   const navigate = useNavigate();
   return (
     <Button
@@ -16,4 +16,4 @@ function ButtonBack() {
   );
 }
 
-export default ButtonBack;
+export default BackButton;
