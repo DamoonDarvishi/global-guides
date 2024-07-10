@@ -3,8 +3,13 @@ import styles from "./Logo.module.css";
 
 function Logo() {
   return (
-    <Link to="/">
-      <img src="/logo.png" alt="take off trips logo" className={styles.logo} />
+    <Link to="/" className={styles.logo}>
+      <img
+        className={styles.logoImg}
+        src="/Global-Guide-Logo.svg"
+        alt="take off trips logo"
+      />
+      <span className={styles.logoText}>Global Guide</span>
     </Link>
   );
 }
