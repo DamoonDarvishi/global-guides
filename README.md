@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://global-guides.vercel.app/">
-    <img width="150px" height="150px" src="/images/Global-Guide-Logo.svg" alt="demo"/>
+    <img width="150px" height="150px" src="/public/images/Global-Guide-Logo.svg" alt="demo"/>
   </a>
 </p>
 ## Demo
@@ -18,6 +18,6 @@
 
 <div style="max-width: 600px">
 <a href="https://global-guides.vercel.app/">
-  <img src="/images/global-guides.png" width="100%" alt="demo">
+  <img src="/public/images/global-guides.png" width="100%" alt="demo">
   </a>
 </div>

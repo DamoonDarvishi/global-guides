@@ -8,8 +8,10 @@ export default function Product() {
       <section>
         <img
           className={styles.productImg}
-          src="img-1.jpg"
+          src="images/img-1.jpg"
           alt="person with dog overlooking mountain with sunset"
+          width={400}
+          height={400}
         />
         <div>
           <h2>About Global Guide.</h2>

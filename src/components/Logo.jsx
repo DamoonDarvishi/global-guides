@@ -6,7 +6,7 @@ function Logo() {
     <Link to="/" className={styles.logo}>
       <img
         className={styles.logoImg}
-        src="/Global-Guide-Logo.svg"
+        src="/images/Global-Guide-Logo.svg"
         alt="take off trips logo"
       />
       <span className={styles.logoText}>Global Guide</span>
