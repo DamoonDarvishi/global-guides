@@ -13,9 +13,8 @@
   npm run server
   npm run dev
 ```
-
-<div style="max-width: 600px">
 ## Demo
+<div style="max-width: 600px">
 <a href="https://global-guides.vercel.app/">
   <img src="/public/images/global-guides.png" width="100%" alt="demo">
   </a>
